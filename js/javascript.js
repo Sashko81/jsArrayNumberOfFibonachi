@@ -1,4 +1,4 @@
-// version#1 recursion
+// version#1
 let num = parseFloat(prompt('Please, enter a number'));
 while (Number.isNaN(num)) {
     alert('Please enter a number');
@@ -44,7 +44,7 @@ function fibonacci1(num1) {
 
 alert('number of Fibonacci is:  ' +fibonacci1(num1));
 
-//version#3
+//version#3 
 let num2 = parseFloat(prompt('Please, enter a number'));
 while (Number.isNaN(num2)) {
     alert('Please enter a number');
