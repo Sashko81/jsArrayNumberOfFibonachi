@@ -1,8 +1,8 @@
 // version#1 recursion
-const num = parseFloat(prompt('Please, enter a number', 1));
-while( Number.isNaN(num) ) {
-alert('Please enter a number');
-num = parseFloat(prompt('Please, enter a number', 1));
+let num = parseFloat(prompt('Please, enter a number'));
+while (Number.isNaN(num)) {
+    alert('Please enter a number');
+    num = parseFloat(prompt('Please, enter a number'));
 }
 
 function fibonacci(num) {
@@ -14,24 +14,24 @@ function fibonacci(num) {
     return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
-alert(fibonacci(num));
+alert('number of Fibonacci is:  ' +fibonacci(num));
 
 //version#2
-const num1 = parseFloat(prompt('Please, enter a number', 1));
-while( Number.isNaN(num1) ) {
-alert('Please enter a number');
-num1 = parseFloat(prompt('Please, enter a number', 1));
+let num1 = parseFloat(prompt('Please, enter a number'));
+while (Number.isNaN(num1)) {
+    alert('Please enter a number');
+    num1 = parseFloat(prompt('Please, enter a number'));
 }
 
 function fibonacci1(num1) {
-    let a = 0, 
-        b = 1,
-        result = b;
-        if (num1 === 1) {
+    let a = 0
+      , b = 1
+      , result = b;
+    if (num1 === 1) {
         return 1;
     } else if (num1 < 1) {
         return 0;
-    }    
+    }
     while (num1 > 1) {
         result = a + b;
         a = b;
@@ -42,13 +42,13 @@ function fibonacci1(num1) {
     return result;
 }
 
-alert(fibonacci1(num1));
+alert('number of Fibonacci is:  ' +fibonacci1(num1));
 
 //version#3
-const num2 = parseFloat(prompt('Please, enter a number', 1));
-while( Number.isNaN(num2) ) {
-alert('Please enter a number');
-num2 = parseFloat(prompt('Please, enter a number', 1));
+let num2 = parseFloat(prompt('Please, enter a number'));
+while (Number.isNaN(num2)) {
+    alert('Please enter a number');
+    num2 = parseFloat(prompt('Please, enter a number'));
 }
 function fibonacci2(num2) {
     let arr = [1, 1];
@@ -65,4 +65,4 @@ function fibonacci2(num2) {
     }
     return arr[num2 - 1];
 }
-alert(fibonacci2(num2));
+alert('number of Fibonacci is:  ' +fibonacci2(num2));
